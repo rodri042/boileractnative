@@ -3,12 +3,6 @@
 ## Set up the environment
 
 - Install node.js >= 8
-- Install the React Native CLI
-
-```bash
-npm install -g react-native-cli
-```
-
 - Install Android Studio
 - Install Android SDK 27 (Android 8.1 - Oreo)
 - Add the following lines to your shell "run commands" file (`.bashrc`, `.zshrc`, ...)
@@ -24,6 +18,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 ## Install the application dependencies
 
 ```bash
+npm install -g react-native-cli
 npm install
 ```
 
