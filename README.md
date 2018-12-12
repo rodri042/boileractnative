@@ -1,4 +1,4 @@
-# boileract
+# boileractnative
 
 ## Set up the environment
 
@@ -41,6 +41,7 @@ It's highly recommended to enable "Live Reload". You can do it in the Dev Menu, 
 
 - Remove `package-lock.json`
 - Remove `node_modules/`
+- Run `npm install`
 - Try again. If it doesn't work, try running this command to see what's the problem:
 
 ```
