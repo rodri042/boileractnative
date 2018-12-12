@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-It's highly recommended to enable "Live Reload". You can do it in the Dev Menu, which can be opened shaking your phone while the app is running. To reload manually: `adb shell input text "RR"`
+It's highly recommended to enable "Live Reload". You can do it in the Dev Menu, which can be opened by shaking your phone while the app is running. To reload manually: `adb shell input text "RR"`
 
 ## IDE Plugins
 

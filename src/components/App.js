@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Platform, Text, View, Image } from "react-native";
+import { Platform, View, Text, Image } from "react-native";
+import Counter from "./Counter";
 import styles from "./App.styles";
 
 // https://facebook.github.io/react-native/docs/getting-started
@@ -8,6 +9,18 @@ const instructions = Platform.select({
   ios: "I'm running on IOS",
   android: "I'm running on Android"
 });
+
+const separator = (
+  <View
+    style={{
+      marginTop: 10,
+      marginBottom: 10,
+      borderBottomColor: "black",
+      borderBottomWidth: 1,
+      width: "100%"
+    }}
+  />
+);
 
 export default class App extends Component {
   render() {
@@ -23,6 +36,8 @@ export default class App extends Component {
           }}
           style={{ width: 100, height: 100 }}
         />
+        {separator}
+        <Counter style={styles.counter} />
       </View>
     );
   }
