@@ -34,3 +34,15 @@ It's highly recommended to enable "Live Reload". You can do it in the Dev Menu, 
 
 - Prettier (enable "format on save" option)
 - EditorConfig
+
+## Troubleshooting
+
+### Metro Bundler has encountered an internal error
+
+- Remove `package-lock.json`
+- Remove `node_modules/`
+- Try again. If it doesn't work, try running this command to see what's the problem:
+
+```
+react-native bundle --entry-file index.js --bundle-output android/app/src/main/index.android.bundle --assets-dest android/app/src/main/res
+```
