@@ -16,12 +16,14 @@ class Counter extends Component {
             color="#841584"
             accessibilityLabel="Add 1 unit"
             onPress={this.props.increment}
+            disabled={this.props.isLoading}
           />
           <Button
             title="Increment async"
             color="#ff0000"
             accessibilityLabel="Add 1 unit"
             onPress={this.props.incrementAsync}
+            disabled={this.props.isLoading}
           />
         </View>
       </View>
@@ -30,7 +32,8 @@ class Counter extends Component {
 }
 
 const mapState = (state) => ({
-  count: state.count
+  count: state.count,
+  isLoading: state.loading.effects.count.incrementAsync
 });
 
 const mapDispatch = ({ count: { increment, incrementAsync } }) => ({
